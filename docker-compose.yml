@@ -24,11 +24,11 @@ services:
       - '8020:8020'
       - '8030:8030'
       - '8040:8040'
-    environment:
-      postgres_host: postgres
-      postgres_port: 5432
-      postgres_user: brotherhood
-      postgres_pass: letmeinE45C2f
-      postgres_db: postgres
-      ipfs: 'ipfs:5001'
-      ethereum: 'matic:$https://polygon-mainnet.g.alchemy.com/v2/oWOK3dHedNU43Urxidu-27O_7wjPur1a'
+environment:
+  - postgres_host=postgres
+  - postgres_port=5432
+  - postgres_user=brotherhood
+  - postgres_pass=letmeinE45C2f
+  - postgres_db=postgres
+  - ipfs=ipfs:5001
+  - ethereum=https://polygon-mainnet.g.alchemy.com/v2/oWOK3dHedNU43Urxidu-27O_7wjPur1a
